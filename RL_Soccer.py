@@ -2,7 +2,7 @@ import numpy as np
 import pygame
 import tensorflow as tf
 
-from PygameDDPG import mainloop, ENVIROMENT
+from Soccer_env import mainloop, ENVIROMENT
 
 #extra classes for convenience
 class Rect:
