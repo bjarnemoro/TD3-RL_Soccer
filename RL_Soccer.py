@@ -118,7 +118,7 @@ class Main_game:
     self.difficulty = 0
     
     self.current_file = self.difficulty * 100 + 50
-    filepath = "policy_model\policy_model%s_model2" % (self.current_file)
+    filepath = "policy_model%s_model2" % (self.current_file)
     self.model = tf.keras.models.load_model(filepath)
     
     restart = lambda: self.env.reset(self.runner.game_len)
@@ -222,7 +222,7 @@ class Main_game:
     self.difficulty_text = self.font.render(str(self.difficulty), False, (200, 200, 200, 1))
     
     self.current_file = self.difficulty * 100 + 50
-    filepath = "policy_model\policy_model%s_model2" % (self.current_file)
+    filepath = "policy_model%s_model2" % (self.current_file)
     self.model = tf.keras.models.load_model(filepath)
     
     self.env.reset(self.runner.game_len)
