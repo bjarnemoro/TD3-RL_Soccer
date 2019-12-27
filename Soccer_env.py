@@ -1,8 +1,6 @@
 import pygame
 import numpy as np
 import math
-import tensorflow as tf
-import sys
 
 class Player:
   def __init__(self, win, boundary, player, noise):
