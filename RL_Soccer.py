@@ -245,7 +245,7 @@ class Replay_game(Main_game):
     super().__init__(win, runner)
     
     self.buttons.remove(self.input_mode_button)
-    filepath2 = "policy_model\policy_model%s_model1" % (self.current_file)
+    filepath2 = "policy_model%s_model1" % (self.current_file)
     self.model2 = tf.keras.models.load_model(filepath2)
     
   def draw(self, mouse, key, _):
